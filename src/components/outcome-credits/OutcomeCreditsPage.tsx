@@ -8,7 +8,7 @@ import {
 export default function OutcomeCreditsPage() {
   return (
     <Layout
-      title="Credit-based Billing for AI Companies | StringCost"
+      title="Credit-based Billing for AI Companies | OpenRind"
       description="Implement the credit-based billing model used by Lovable without building the backend yourself. Automatic credit pricing from underlying token, reasoning, and MCP costs."
     >
       <Head>

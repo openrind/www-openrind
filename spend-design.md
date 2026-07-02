@@ -62,7 +62,7 @@ The section itself is fine — VS cards + social proof have good variety. But th
 ┌──────────────────────────────────────────────────────┐
 │  250x              $1,500              15 min         │
 │  cost variance     runaway session     detection      │
-│  between users                         with StringCost│
+│  between users                         with OpenRind│
 └──────────────────────────────────────────────────────┘
 ```
 
@@ -114,7 +114,7 @@ The 2-col + circle layout is already good. Add a visual anchor:
 ┌──────────────────────────────────────────────────────┐
 │  3 vendors           0 unified           1 pane      │
 │  different           dashboards          of glass     │
-│  telemetry                               w/ StringCost│
+│  telemetry                               w/ OpenRind│
 └──────────────────────────────────────────────────────┘
 ```
 

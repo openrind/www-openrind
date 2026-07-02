@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.stringcost.com/sitemap.xml
+Sitemap: https://www.openrind.com/sitemap.xml

@@ -19,7 +19,7 @@ export function HeroSection() {
 				<span className='font-body text-[15px] uppercase tracking-[0.3em] text-brand-text-muted font-medium'>AI Accounting Infrastructure</span>
 				<div className='flex flex-col gap-6 max-w-3xl'>
 					<h1 className='font-display text-[28px] sm:text-[44px] md:text-[56px] lg:text-[72px] font-bold tracking-tight leading-[1.1] text-balance'>
-						StringCost:<br />Cloudflare meets SAP for AI.
+						OpenRind:<br />Cloudflare meets SAP for AI.
 					</h1>
 					<p className='font-body text-lg leading-[1.55] text-brand-text-secondary text-pretty'>Think Cloudflare for AI Accounting—we sit in front of your API and automatically calculate per-user, per-agent, per-outcome costs.</p>
 					<div className='flex flex-wrap gap-2 pt-1'>
@@ -67,7 +67,7 @@ export function HeroSection() {
 				<div className='flex flex-col gap-3 sm:flex-row sm:items-center'>
 					<span className="cta-glow">
 						<a
-							href='http://app.stringcost.com/'
+							href='http://app.openrind.com/'
 							className={primaryButton}
 						>
 							Protect Your Margins — Free
@@ -75,7 +75,7 @@ export function HeroSection() {
 						</a>
 					</span>
 					<a
-						href='http://app.stringcost.com/'
+						href='http://app.openrind.com/'
 						className={secondaryButton}
 					>
 						See It in Action
@@ -186,7 +186,7 @@ export function RevenueFirstSection() {
 						<div className='flex flex-col lg:flex-row gap-6 items-center'>
 							<div className='flex-1 rounded-2xl border border-brand-accent-100 bg-brand-accent-100/20 p-6 shadow-sm w-full'>
 								<h3 className='text-lg font-matter font-semibold text-brand-text-primary'>Deep Runtime Inspection</h3>
-								<p className='mt-3 text-sm text-brand-text-secondary'>StringCost isn&apos;t a library that invades your code—it&apos;s a <strong className='underline-hand-green text-brand-text-primary'>runtime-aware control plane</strong> that inspects your agent&apos;s traffic at the network level via a <strong className='underline-hand-green text-brand-text-primary'>secure, signed-URL architecture</strong>. Requests flow through an <strong className='underline-hand-green text-brand-text-primary'>asynchronous deep prompt inspection engine</strong> that classifies business intent with zero added latency.</p>
+								<p className='mt-3 text-sm text-brand-text-secondary'>OpenRind isn&apos;t a library that invades your code—it&apos;s a <strong className='underline-hand-green text-brand-text-primary'>runtime-aware control plane</strong> that inspects your agent&apos;s traffic at the network level via a <strong className='underline-hand-green text-brand-text-primary'>secure, signed-URL architecture</strong>. Requests flow through an <strong className='underline-hand-green text-brand-text-primary'>asynchronous deep prompt inspection engine</strong> that classifies business intent with zero added latency.</p>
 							</div>
 							<div className='flex items-center justify-center'>
 								<div className='rounded-full bg-brand-accent-300 text-white w-12 h-12 flex items-center justify-center text-2xl font-bold'>
@@ -234,7 +234,7 @@ export function SystemSection() {
 				</div>
 				
 				<div className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-4 sm:p-8">
-					<img src="/img/financial-architecture.svg" alt="StringCost Financial Architecture" className="w-full h-auto rounded-lg" />
+					<img src="/img/financial-architecture.svg" alt="OpenRind Financial Architecture" className="w-full h-auto rounded-lg" />
 				</div>
 
 				
@@ -254,7 +254,7 @@ export function SourceOfTruthSection() {
 							Double-Entry Accounting
 						</div>
 						<h2 className='text-[26px] sm:text-[34px] lg:text-[38px] font-matter font-semibold tracking-tight leading-[1.26] text-balance'>A True Ledger, Not Just a Token Counter</h2>
-						<p className='text-lg leading-[1.55] text-brand-text-secondary text-pretty'>Your AI bill is a black box. StringCost gives you X-ray vision.</p>
+						<p className='text-lg leading-[1.55] text-brand-text-secondary text-pretty'>Your AI bill is a black box. OpenRind gives you X-ray vision.</p>
 						<p className='text-lg leading-[1.55] text-brand-text-secondary text-pretty border-l-4 border-brand-accent-300 pl-6 py-2'>While other proxies just count total tokens, we provide a <strong className='text-brand-text-primary'>double-entry ledger</strong> for every agent run. Our asynchronous background worker inspects every prompt to give you a true P&L statement for your AI.</p>
 					</div>
 					<div className='lg:w-1/2 space-y-6'>
@@ -277,7 +277,7 @@ export function SourceOfTruthSection() {
 								<Lightbulb className="w-6 h-6" />
 							</div>
 							<h3 className='text-lg font-matter font-bold mb-2'>Know Your &ldquo;Why&rdquo;</h3>
-							<p className='text-sm text-brand-text-secondary'>Finally answer critical questions: What&apos;s the P&amp;L of your Tree-of-Thought agent? Are evaluation steps costing more than synthesis? StringCost tells you.</p>
+							<p className='text-sm text-brand-text-secondary'>Finally answer critical questions: What&apos;s the P&amp;L of your Tree-of-Thought agent? Are evaluation steps costing more than synthesis? OpenRind tells you.</p>
 						</div>
 					</div>
 				</div>
@@ -395,7 +395,7 @@ export function FinalCtaSection() {
 					<h2 className='text-[26px] sm:text-[34px] lg:text-[38px] font-matter font-semibold tracking-tight leading-[1.26] text-balance'>Get the Control You Need and the Scalability You Deserve.</h2>
 					<p className='text-lg leading-[1.55] text-brand-text-secondary text-pretty'>Stop building brittle, insecure AI apps. Start building on a true enterprise-grade control plane.</p>
 					<div className='flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row'>
-						<a href='http://app.stringcost.com/' className={primaryButton}>
+						<a href='http://app.openrind.com/' className={primaryButton}>
 							Start Saving on AI Costs
 							<ArrowRight className="w-4 h-4 ml-2" />
 						</a>

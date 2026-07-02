@@ -92,7 +92,7 @@ const steps = [
 	},
 	{
 		num: "02",
-		title: "StringCost opens session",
+		title: "OpenRind opens session",
 		description: "We create an authorization ceiling, issue a signed session, start a ledger.",
 		icon: ShieldCheck,
 	},
@@ -141,7 +141,7 @@ export function X402Hero() {
 							<span className="x402-glow-text font-mono">x402</span> needs accounting.
 							<br />
 							<span className="bg-gradient-to-r from-white via-brand-accent-100 to-brand-accent-200 bg-clip-text text-transparent">
-								StringCost delivers it.
+								OpenRind delivers it.
 							</span>
 						</h1>
 
@@ -151,12 +151,12 @@ export function X402Hero() {
 
 						<div className="flex flex-col gap-4 sm:flex-row sm:items-center pt-2">
 							<span className="cta-glow">
-								<a href="http://app.stringcost.com/" className={primaryButton}>
+								<a href="http://app.openrind.com/" className={primaryButton}>
 									Ship x402 Billing Today
 									<ArrowRight className="ml-2 h-4 w-4" />
 								</a>
 							</span>
-							<a href="http://app.stringcost.com/" className={secondaryButtonLight}>
+							<a href="http://app.openrind.com/" className={secondaryButtonLight}>
 								Explore the Dashboard
 							</a>
 						</div>
@@ -359,7 +359,7 @@ export function X402Content() {
 								{[
 									{ step: "1", title: "Account ID + limits", desc: "Agent maps to KYC'd owner with set limits" },
 									{ step: "2", title: "402 detected", desc: "SDK detects challenge, requests authorization" },
-									{ step: "3", title: "Draw credit", desc: "StringCost draws from pool, opens ledger" },
+									{ step: "3", title: "Draw credit", desc: "OpenRind draws from pool, opens ledger" },
 									{ step: "4", title: "Settle merchants", desc: "Pay in stablecoins while usage accrues" },
 									{ step: "5", title: "Capture exact", desc: "Close run, refund delta automatically" },
 								].map((item, index) => (
@@ -384,7 +384,7 @@ export function X402Content() {
 				<div className="container-custom py-[80px] lg:py-[120px]">
 					<div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
 						<h2 className="text-[26px] sm:text-[34px] lg:text-[40px] font-matter font-bold tracking-tight leading-[1.2]">
-							<code className="text-brand-accent-300 font-mono text-[0.85em]">x402</code> without StringCost
+							<code className="text-brand-accent-300 font-mono text-[0.85em]">x402</code> without OpenRind
 							<br />
 							<span className="underline-hand">is a billing dead end</span>
 						</h2>
@@ -399,10 +399,10 @@ export function X402Content() {
 							<div className="grid grid-cols-[1fr_1fr_1fr] bg-brand-surface border-b border-brand-border">
 								<div className="p-4 text-xs font-semibold uppercase tracking-wider text-brand-text-muted"></div>
 								<div className="p-4 text-xs font-semibold uppercase tracking-wider text-center text-rose-600 border-x border-brand-border/50">
-									Without StringCost
+									Without OpenRind
 								</div>
 								<div className="p-4 text-xs font-semibold uppercase tracking-wider text-center text-emerald-600">
-									With StringCost
+									With OpenRind
 								</div>
 							</div>
 
@@ -446,7 +446,7 @@ export function X402Content() {
 							<span className="highlight-hand-inline">makes it work</span>
 						</h2>
 						<p className="text-lg text-brand-text-secondary">
-							<code className="text-brand-accent-300 font-mono">x402</code> signals payment required. StringCost turns that into a session that prices variable workloads in real time.
+							<code className="text-brand-accent-300 font-mono">x402</code> signals payment required. OpenRind turns that into a session that prices variable workloads in real time.
 						</p>
 					</div>
 
@@ -501,7 +501,7 @@ export function X402Content() {
 
 						<div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
 							<a
-								href="http://app.stringcost.com/"
+								href="http://app.openrind.com/"
 								className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-matter font-semibold transition-all duration-200 bg-white text-[#210F26] hover:bg-brand-accent-100 hover:scale-[1.02] active:scale-[0.98]"
 							>
 								Go Live — No SDK Required

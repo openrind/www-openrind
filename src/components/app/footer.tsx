@@ -19,11 +19,11 @@ const footerLinks = {
     },
     {
       label: "Twitter",
-      href: "https://x.com/stringcost",
+      href: "https://x.com/openrind",
     },
     {
       label: "Github",
-      href: "https://github.com/stringcost/stringcost",
+      href: "https://github.com/openrind",
     },
   ],
 };
@@ -35,14 +35,14 @@ export function Footer() {
 			<div className='container-custom flex flex-col gap-12 md:flex-row md:justify-between'>
 				<div className='flex flex-col gap-4'>
 					<img
-						src='/img/stringcost-logo.png'
-						alt='StringCost'
+						src='/img/openrind-logo.png'
+						alt='OpenRind'
 						width={120}
 						height={41}
 						className='w-[120px] h-[41px] object-contain'
 					/>
 					<p className='max-w-xs text-sm text-brand-text-muted'>
-						{`© ${currentYear} StringCost Inc. All rights reserved.`}
+						{`© ${currentYear} OpenRind Inc. All rights reserved.`}
 					</p>
 				</div>
 
@@ -51,8 +51,8 @@ export function Footer() {
 					<p className='text-sm text-brand-text-muted'>
 						For technical documentation, partnership inquiries, or investor information please reach out.
 					</p>
-					<a href='mailto:founders@stringcost.com' className='text-sm font-medium text-brand-accent-200 hover:underline'>
-						founders@stringcost.com
+					<a href='mailto:founders@openrind.com' className='text-sm font-medium text-brand-accent-200 hover:underline'>
+						founders@openrind.com
 					</a>
 				</div>
 

@@ -6,7 +6,7 @@ description: Examples for MCP server proxying
 
 # MCP Gateway Examples
 
-StringCost includes an MCP (Model Context Protocol) Gateway for proxying MCP tool servers with authentication and usage tracking.
+OpenRind includes an MCP (Model Context Protocol) Gateway for proxying MCP tool servers with authentication and usage tracking.
 
 ## Single MCP Server
 
@@ -61,11 +61,11 @@ Returns standard MCP format:
 {
   "mcpServers": {
     "deepwiki": {
-      "url": "https://scost-gateway.arakoo.com/mcp/mcp?url=...&token=...",
+      "url": "https://openrind-gateway.arakoo.com/mcp/mcp?url=...&token=...",
       "transport": "sse"
     },
     "github": {
-      "url": "https://scost-gateway.arakoo.com/mcp/mcp?url=...&token=...",
+      "url": "https://openrind-gateway.arakoo.com/mcp/mcp?url=...&token=...",
       "transport": "sse"
     }
   }

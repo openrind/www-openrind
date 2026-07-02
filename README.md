@@ -1,6 +1,6 @@
-# Website
+# OpenRind
 
-This website is built using [Docusaurus](https://docusaurus.io/),
+The marketing and documentation site for **OpenRind** — credit-based billing and AI developer-tool spend management. Built with [Docusaurus](https://docusaurus.io/) and deployed to GitHub Pages at [www.openrind.com](https://www.openrind.com).
 
 ### Installation
 
@@ -14,7 +14,7 @@ $ yarn
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the servere.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
@@ -22,20 +22,8 @@ This command starts a local development server and opens up a browser window. Mo
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content into the `build` directory and can be served using any static content hosting service. Broken internal links fail the build (`onBrokenLinks: "throw"`).
 
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Deployment is automated: pushing to the `openrind` branch triggers the **Deploy to GitHub Pages** GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds the site and publishes it to GitHub Pages. Pull requests to `openrind` run a test build. The custom domain is configured via `CNAME`.

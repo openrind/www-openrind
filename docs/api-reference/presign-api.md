@@ -10,7 +10,7 @@ Generate signed URLs for LLM provider access.
 
 **Endpoint:** `POST /v1/presign`
 
-**Base URL:** `https://scost.arakoo.com`
+**Base URL:** `https://openrind.arakoo.com`
 
 ## Request Headers
 
@@ -45,7 +45,7 @@ Either `client_api_key` or `virtual_key` must be provided.
 
 ```json
 {
-  "url": "https://scost-gateway.arakoo.com/stringcost-proxy/t/TOKEN/v1/chat/completions",
+  "url": "https://openrind-gateway.arakoo.com/openrind-proxy/t/TOKEN/v1/chat/completions",
   "session_id": "550e8400-e29b-41d4-a716-446655440000",
   "expires_at": 1735689600
 }
@@ -54,7 +54,7 @@ Either `client_api_key` or `virtual_key` must be provided.
 ## Example Request
 
 ```bash
-curl -X POST https://scost.arakoo.com/v1/presign \
+curl -X POST https://openrind.arakoo.com/v1/presign \
   -H "Authorization: Bearer ${API_KEY}" \
   -H "Content-Type: application/json" \
   -d '{

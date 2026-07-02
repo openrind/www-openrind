@@ -10,7 +10,7 @@ Generate signed URLs for MCP (Model Context Protocol) server access.
 
 **Endpoint:** `POST /v2/mcp-presign`
 
-**Base URL:** `https://scost.arakoo.com`
+**Base URL:** `https://openrind.arakoo.com`
 
 ## Request Headers
 
@@ -39,13 +39,13 @@ Generate signed URLs for MCP (Model Context Protocol) server access.
 
 ```json
 {
-  "bundle_url": "https://scost-gateway.arakoo.com/mcp/bundle/BUNDLE_TOKEN",
+  "bundle_url": "https://openrind-gateway.arakoo.com/mcp/bundle/BUNDLE_TOKEN",
   "bundle_token": "BUNDLE_TOKEN",
   "expires_at": 1735689600,
   "session_id": "550e8400-e29b-41d4-a716-446655440000",
   "servers": {
     "deepwiki": {
-      "url": "https://scost-gateway.arakoo.com/mcp/mcp?url=...&token=...",
+      "url": "https://openrind-gateway.arakoo.com/mcp/mcp?url=...&token=...",
       "transport": "sse"
     }
   }
@@ -60,7 +60,7 @@ Fetching the `bundle_url` returns standard MCP format:
 {
   "mcpServers": {
     "deepwiki": {
-      "url": "https://scost-gateway.arakoo.com/mcp/mcp?url=...&token=...",
+      "url": "https://openrind-gateway.arakoo.com/mcp/mcp?url=...&token=...",
       "transport": "sse"
     }
   }

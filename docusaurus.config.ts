@@ -3,21 +3,20 @@ import type {Config} from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "StringCost",
+  title: "OpenRind",
   tagline: "Credit-based Billing for AI Companies.",
   favicon: "/img/favicon.jpg",
 
 
 // Set the production url of your site here
-url: "https://www.stringcost.com",
+url: "https://www.openrind.com",
 
 // Set the /<baseUrl>/ pathname under which your site is served
 // For GitHub pages deployment, it is often '/<projectName>/'
-//baseUrl: "/docusaurus-www/",
 baseUrl: "/",
 
-  organizationName: "stringcost", // Usually your GitHub org/user name.
-  projectName: "docusaurus-www", // Usually your repo name.
+  organizationName: "openrind", // Usually your GitHub org/user name.
+  projectName: "www-openrind", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -38,22 +37,10 @@ baseUrl: "/",
           beforeDefaultRemarkPlugins: [],
           beforeDefaultRehypePlugins: [],
           // Remove or change this URL to customize the "edit this page" link.
-         // editUrl: 
+         // editUrl:
             //"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Remove or change this URL to customize the "edit this page" link.
-          // editUrl: 
-           // "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -96,7 +83,7 @@ baseUrl: "/",
     },
     {
       property: 'og:site_name',
-      content: 'StringCost',
+      content: 'OpenRind',
     },
     {
       property: 'og:type',
@@ -128,62 +115,24 @@ baseUrl: "/",
     navbar: {
       title: "",
       logo: {
-        alt: "StringCost",
-        src: "/img/stringcost-logo.png",
+        alt: "OpenRind",
+        src: "/img/openrind-logo.png",
       },
       items: [
         {
           position: "left",
           label: "Github",
-          to: "https://github.com/stringcost/stringcost",
+          to: "https://github.com/openrind",
         },
-        { to: "https://x.com/stringcost", label: "Twitter", position: "left" },
+        { to: "https://x.com/openrind", label: "Twitter", position: "left" },
       ],
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // The visible footer is rendered by the swizzled theme
+      // (src/components/app/footer.tsx); these config links are unused.
+      links: [],
+      copyright: `Copyright © ${new Date().getFullYear()} OpenRind Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.vsDark,

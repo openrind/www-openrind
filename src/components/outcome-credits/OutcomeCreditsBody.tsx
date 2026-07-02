@@ -18,11 +18,11 @@ export function OutcomeCreditsHero() {
 				<span className='font-body text-[15px] uppercase tracking-[0.3em] text-brand-text-muted font-medium'>Billing Infrastructure for Agents</span>
 				<div className='flex flex-col gap-6 max-w-4xl'>
 					<h1 className='font-display text-[34px] sm:text-[52px] lg:text-[76px] font-bold tracking-tight leading-[1.04] text-balance'>
-						StringCost:<br />Credit-based Billing for AI Companies.
+						OpenRind:<br />Credit-based Billing for AI Companies.
 					</h1>
 					<div className='space-y-5 max-w-2xl'>
 						<p className='font-display text-lg sm:text-xl font-medium leading-[1.4] text-brand-text-primary text-pretty border-l-4 border-brand-accent-300 pl-4'>
-							StringCost automatically creates and <span className='highlight-hand-inline font-semibold'>prices credits</span> from your underlying token, reasoning, and MCP costs. Then <span className='underline-hand'>calculates consumption</span>, <span className='underline-hand'>margin</span>, handles <span className='underline-hand'>billing overages</span> and <span className='underline-hand'>invoicing</span> with complex <span className='underline-hand'>Cost-Plus</span> calculations.
+							OpenRind automatically creates and <span className='highlight-hand-inline font-semibold'>prices credits</span> from your underlying token, reasoning, and MCP costs. Then <span className='underline-hand'>calculates consumption</span>, <span className='underline-hand'>margin</span>, handles <span className='underline-hand'>billing overages</span> and <span className='underline-hand'>invoicing</span> with complex <span className='underline-hand'>Cost-Plus</span> calculations.
 						</p>
 
 						<p className='font-body text-lg leading-[1.55] text-brand-text-secondary text-pretty'>
@@ -41,7 +41,7 @@ export function OutcomeCreditsHero() {
 					<div className='flex flex-col gap-3 sm:flex-row sm:items-center pt-2'>
 						<span className="cta-glow">
 							<a
-								href='http://app.stringcost.com/'
+								href='http://app.openrind.com/'
 								className={primaryButton}
 							>
 								Launch Credit Billing Free
@@ -49,7 +49,7 @@ export function OutcomeCreditsHero() {
 							</a>
 						</span>
 						<a
-							href='http://app.stringcost.com/'
+							href='http://app.openrind.com/'
 							className={secondaryButton}
 						>
 							Take a Quick Tour
@@ -134,7 +134,7 @@ export function OutcomeCreditsContent() {
 										<AlertTriangle className="w-4 h-4" /> Rapid, Opaque Burn
 									</h5>
 									<p className='text-sm text-brand-text-secondary'>
-										Users saw credits vanish without explanation. One user spent $225 in a month with zero transparency on <em>why</em>. <strong className='text-brand-text-primary'>StringCost solves this with audit logs for every deduction.</strong>
+										Users saw credits vanish without explanation. One user spent $225 in a month with zero transparency on <em>why</em>. <strong className='text-brand-text-primary'>OpenRind solves this with audit logs for every deduction.</strong>
 									</p>
 								</div>
 								<div className='space-y-2'>
@@ -142,7 +142,7 @@ export function OutcomeCreditsContent() {
 										<AlertTriangle className="w-4 h-4" /> Failures Cost Money
 									</h5>
 									<p className='text-sm text-brand-text-secondary'>
-										If the AI errored 3x, Lovable still charged. Users felt punished for the tool&apos;s mistakes. <strong className='text-brand-text-primary'>StringCost lets you programmatically refund failed tool calls.</strong>
+										If the AI errored 3x, Lovable still charged. Users felt punished for the tool&apos;s mistakes. <strong className='text-brand-text-primary'>OpenRind lets you programmatically refund failed tool calls.</strong>
 									</p>
 								</div>
 								<div className='space-y-2'>
@@ -150,7 +150,7 @@ export function OutcomeCreditsContent() {
 										<AlertTriangle className="w-4 h-4" /> Unpredictable Costs
 									</h5>
 									<p className='text-sm text-brand-text-secondary'>
-										A feature that cost 5 credits one day might cost 8 the next. <strong className='text-brand-text-primary'>StringCost provides strict rate-limiting and cost-capping per user.</strong>
+										A feature that cost 5 credits one day might cost 8 the next. <strong className='text-brand-text-primary'>OpenRind provides strict rate-limiting and cost-capping per user.</strong>
 									</p>
 								</div>
 								<div className='space-y-2'>
@@ -165,7 +165,7 @@ export function OutcomeCreditsContent() {
 							
 							<div className='mt-6 pt-6 border-t border-brand-border/20'>
 								<p className='text-sm font-medium text-brand-text-primary italic'>
-									The takeaway: Credits are the right model, but a poor implementation alienates users. StringCost gives you the Lovable model—without the user backlash.
+									The takeaway: Credits are the right model, but a poor implementation alienates users. OpenRind gives you the Lovable model—without the user backlash.
 								</p>
 							</div>
 						</div>
@@ -385,7 +385,7 @@ export function OutcomeCreditsContent() {
 					<div className='mx-auto max-w-6xl overflow-hidden rounded-[28px] border border-brand-border bg-white shadow-2xl'>
 						<img
 							src='/img/report-hero.webp'
-							alt='StringCost financial reports dashboard showing vendor token spend, COGS, revenue, and gross margin'
+							alt='OpenRind financial reports dashboard showing vendor token spend, COGS, revenue, and gross margin'
 							width={1354}
 							height={909}
 							loading='lazy'
@@ -465,12 +465,12 @@ export function OutcomeCreditsContent() {
 							<em>Only a proxy can see the full economic picture — and turn usage chaos into clean, trustable credits.</em>
 						</p>
 						<p className='text-lg leading-[1.55] text-white/90 max-w-3xl mx-auto'>
-							The AI economy needed a new billing unit — the <strong>credit</strong>. But to make credits programmable, cost-aware, and fair, we had to observe everything. That&apos;s why we built <strong className='underline-hand-green'>StringCost as a proxy</strong>.
+							The AI economy needed a new billing unit — the <strong>credit</strong>. But to make credits programmable, cost-aware, and fair, we had to observe everything. That&apos;s why we built <strong className='underline-hand-green'>OpenRind as a proxy</strong>.
 						</p>
 					</div>
 
 					<div className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-4 sm:p-8">
-						<img src="/img/financial-architecture.svg" alt="StringCost Financial Architecture" className="w-full h-auto rounded-lg" />
+						<img src="/img/financial-architecture.svg" alt="OpenRind Financial Architecture" className="w-full h-auto rounded-lg" />
 					</div>
 
 					<div className='grid gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto'>
@@ -496,7 +496,7 @@ export function OutcomeCreditsContent() {
 						<div className='max-w-3xl mx-auto text-center mb-10'>
 							<h3 className='font-display text-2xl font-semibold text-white'>Flexible Consumption Mapping</h3>
 							<p className='text-white/70 mt-2 text-sm text-pretty'>
-								The hardest part of the complexity is simply deciding how many credits each action &ldquo;costs&rdquo;. StringCost supports flexible mapping strategies:
+								The hardest part of the complexity is simply deciding how many credits each action &ldquo;costs&rdquo;. OpenRind supports flexible mapping strategies:
 							</p>
 						</div>
 						<div className='grid gap-6 md:grid-cols-3'>
@@ -535,7 +535,7 @@ export function OutcomeCreditsContent() {
 						</div>
 						<h2 className='text-[26px] sm:text-[34px] lg:text-[38px] font-matter font-semibold tracking-tight leading-[1.26] text-balance'>Drop-in Billing Infrastructure</h2>
 						<p className='text-lg leading-[1.55] text-brand-text-secondary text-pretty max-w-2xl mx-auto'>
-							You don&apos;t need to build a ledger, write a proxy, or handle race conditions in Postgres. StringCost handles the plumbing.
+							You don&apos;t need to build a ledger, write a proxy, or handle race conditions in Postgres. OpenRind handles the plumbing.
 						</p>
 					</div>
 
@@ -546,7 +546,7 @@ export function OutcomeCreditsContent() {
 								<h3 className='text-lg font-matter font-bold'>1. The Proxy</h3>
 							</div>
 							<p className='text-sm text-brand-text-secondary'>
-								Route your LLM calls through `api.stringcost.com`. We act as a gateway between your app and OpenAI/Anthropic.
+								Route your LLM calls through `api.openrind.com`. We act as a gateway between your app and OpenAI/Anthropic.
 							</p>
 						</div>
 						<div className='relative p-6 rounded-2xl bg-white border border-brand-accent-100 shadow-sm hover:shadow-md transition-shadow'>
@@ -580,10 +580,10 @@ export function OutcomeCreditsContent() {
 							We handle the Credits Modelling, Consumption & Billing.
 						</h2>
 						<p className='text-lg leading-[1.55] text-brand-text-secondary text-pretty max-w-2xl mx-auto'>
-							Building a credit system is hard. You need to handle top-ups, expirations, decimals, and concurrency. StringCost gives you a robust Credits Proxy Gateway so you can focus on building your agent, not your billing engine.
+							Building a credit system is hard. You need to handle top-ups, expirations, decimals, and concurrency. OpenRind gives you a robust Credits Proxy Gateway so you can focus on building your agent, not your billing engine.
 						</p>
 						<div className='flex flex-col items-center justify-center gap-3 pt-4 sm:flex-row'>
-							<a href='http://app.stringcost.com/' className={primaryButton}>
+							<a href='http://app.openrind.com/' className={primaryButton}>
 								Launch Credits Today
 								<ArrowRight className="w-4 h-4 ml-2" />
 							</a>

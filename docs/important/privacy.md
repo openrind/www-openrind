@@ -1,18 +1,18 @@
 ---
 id: privacy
 title: Privacy Policy
-description: Privacy Policy for StringCost Inc.
+description: Privacy Policy for OpenRind Inc.
 ---
 
-# Privacy Policy for StringCost Inc.
+# Privacy Policy for OpenRind Inc.
 
 ## 1. Introduction
 
-Welcome to StringCost Inc. ("StringCost", "we", "us", or "our"). Your privacy is critically important to us. This Privacy Policy explains how we collect, use, store, and share your personal information through our web browser and related services (collectively, the "Services"). By using our Services, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use our Services or opt in to any data sharing features.
+Welcome to OpenRind Inc. ("OpenRind", "we", "us", or "our"). Your privacy is critically important to us. This Privacy Policy explains how we collect, use, store, and share your personal information through our web browser and related services (collectively, the "Services"). By using our Services, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use our Services or opt in to any data sharing features.
 
 For any questions or concerns about this Privacy Policy, please contact us at:
 
-**Email:** webmaster@stringcost.com
+**Email:** webmaster@openrind.com
 **Address:** Delaware, USA
 
 ## 2. Information We Collect
@@ -23,7 +23,7 @@ For any questions or concerns about this Privacy Policy, please contact us at:
 - **Financial Information:** To facilitate cryptocurrency or fiat rewards, we collect payment details such as your crypto wallet address or banking information (processed via secure third-party services).
 
 ### b. Automatic Data Collection
-StringCost automatically collects certain information to help us provide and improve our Services:
+OpenRind automatically collects certain information to help us provide and improve our Services:
 - **Usage & Diagnostic Data:** This includes device type, operating system, browser type, IP address, and log data (such as crash reports and error logs).
 - **Analytics & Tracking Tools:** We use tools like Google Analytics, Mixpanel, Segment, and similar services to track usage patterns and performance. These tools help us understand user behavior, troubleshoot issues, and improve our Services.
 - **Single Sign-On (SSO):** If you log in via third-party providers (e.g., Google or Facebook), we collect the information provided (such as your name and email) for authentication and account setup.
@@ -35,7 +35,7 @@ We use crash reporting services to automatically collect diagnostic information 
 We and our partners use cookies and similar tracking technologies to remember your preferences, authenticate you, and gather usage statistics. You can manage these settings via your browser, though disabling some cookies may limit certain functionalities.
 
 ### e. Children's Privacy (COPPA)
-StringCost is **not intended for children under the age of 13**. We do not knowingly collect personal data from children under 13 in compliance with the Children's Online Privacy Protection Act (COPPA). If we discover that personal data from a child under 13 has been inadvertently collected, we will delete it promptly. Our Services are not directed at, nor should they be used by, anyone under 13.
+OpenRind is **not intended for children under the age of 13**. We do not knowingly collect personal data from children under 13 in compliance with the Children's Online Privacy Protection Act (COPPA). If we discover that personal data from a child under 13 has been inadvertently collected, we will delete it promptly. Our Services are not directed at, nor should they be used by, anyone under 13.
 
 ## 3. How We Use Your Information
 
@@ -82,7 +82,7 @@ You have rights regarding your personal data. These may include:
 - **Opt-Out:** Choose not to participate in our data sharing program or marketing communications. For California residents, you have a right under CCPA to opt out of the "sale" or "sharing" of your data.
 - **Withdrawal of Consent:** You may withdraw your consent for data processing at any time (except where processing is required by law).
 
-To exercise these rights, please adjust your settings in the Services or contact us at webmaster@stringcost.com. We may require additional verification before processing your request.
+To exercise these rights, please adjust your settings in the Services or contact us at webmaster@openrind.com. We may require additional verification before processing your request.
 
 ## 6. Data Security
 
@@ -112,10 +112,10 @@ We may update this Privacy Policy from time to time. When we do, we will revise 
 
 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact:
 
-**StringCost Inc.**
+**OpenRind Inc.**
 Delaware, USA
-**Email:** webmaster@stringcost.com
+**Email:** webmaster@openrind.com
 
 ---
 
-*Thank you for choosing StringCost Inc. We are committed to protecting your privacy and ensuring a secure, transparent, and rewarding experience for all users.*
+*Thank you for choosing OpenRind Inc. We are committed to protecting your privacy and ensuring a secure, transparent, and rewarding experience for all users.*

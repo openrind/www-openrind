@@ -120,12 +120,12 @@ const steps = [
 		num: "01",
 		title: "Agent hits MPP endpoint",
 		description:
-			"Server returns HTTP 402 challenge. StringCost intercepts before payment executes.",
+			"Server returns HTTP 402 challenge. OpenRind intercepts before payment executes.",
 		icon: ArrowRightLeft,
 	},
 	{
 		num: "02",
-		title: "StringCost opens ledger",
+		title: "OpenRind opens ledger",
 		description:
 			"Authorization ceiling set, signed session issued, double-entry ledger started.",
 		icon: ShieldCheck,
@@ -141,7 +141,7 @@ const steps = [
 		num: "04",
 		title: "Settle & reconcile",
 		description:
-			"MPP settles the payment. StringCost captures the exact amount, refunds the delta, closes the books.",
+			"MPP settles the payment. OpenRind captures the exact amount, refunds the delta, closes the books.",
 		icon: Coins,
 	},
 ];
@@ -183,7 +183,7 @@ export function MppHero() {
 							payments.
 							<br />
 							<span className="bg-gradient-to-r from-white via-brand-accent-100 to-brand-accent-200 bg-clip-text text-transparent">
-								StringCost accounts for them.
+								OpenRind accounts for them.
 							</span>
 						</h1>
 
@@ -193,7 +193,7 @@ export function MppHero() {
 								OAuth for money
 							</span>
 							. But OAuth doesn&apos;t give you a P&amp;L.
-							StringCost adds{" "}
+							OpenRind adds{" "}
 							<span className="underline-hand-green text-white">
 								credits
 							</span>
@@ -215,7 +215,7 @@ export function MppHero() {
 						<div className="flex flex-col gap-4 sm:flex-row sm:items-center pt-2">
 							<span className="cta-glow">
 								<a
-									href="http://app.stringcost.com/"
+									href="http://app.openrind.com/"
 									className={primaryButton}
 								>
 									Ship MPP Billing Today
@@ -223,7 +223,7 @@ export function MppHero() {
 								</a>
 							</span>
 							<a
-								href="http://app.stringcost.com/"
+								href="http://app.openrind.com/"
 								className={secondaryButtonLight}
 							>
 								Explore the Dashboard
@@ -309,7 +309,7 @@ export function MppHero() {
 										</span>
 									</div>
 									<p className="text-xs text-white/40 mt-2">
-										MPP sees $47.83. StringCost sees the
+										MPP sees $47.83. OpenRind sees the
 										margin.
 									</p>
 								</div>
@@ -392,7 +392,7 @@ export function MppContent() {
 							</h2>
 
 							<p className="text-lg leading-[1.6] text-brand-text-secondary text-pretty">
-								MPP settles payments via Stripe. StringCost
+								MPP settles payments via Stripe. OpenRind
 								sits in front of your agent traffic as a proxy
 								— metering the full workflow, computing the
 								ledger, and settling the exact amount across
@@ -452,7 +452,7 @@ export function MppContent() {
 
 							<p className="text-lg leading-[1.6] text-white/80 text-pretty">
 								MPP sessions commit funds upfront with a
-								single cap. StringCost adds a full credit
+								single cap. OpenRind adds a full credit
 								system on top — prepaid balances, volume
 								discounts, postpaid invoicing, and dynamic
 								limits that adjust in real time.
@@ -511,12 +511,12 @@ export function MppContent() {
 									{
 										step: "2",
 										title: "MPP 402 intercepted",
-										desc: "StringCost catches the challenge before payment executes",
+										desc: "OpenRind catches the challenge before payment executes",
 									},
 									{
 										step: "3",
 										title: "Draw from credit pool",
-										desc: "StringCost draws from prepaid balance, opens double-entry ledger",
+										desc: "OpenRind draws from prepaid balance, opens double-entry ledger",
 									},
 									{
 										step: "4",
@@ -557,7 +557,7 @@ export function MppContent() {
 				<div className="container-custom py-[80px] lg:py-[120px]">
 					<div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
 						<h2 className="text-[26px] sm:text-[34px] lg:text-[40px] font-matter font-bold tracking-tight leading-[1.2]">
-							MPP without StringCost
+							MPP without OpenRind
 							<br />
 							<span className="underline-hand">
 								is a billing blind spot
@@ -578,7 +578,7 @@ export function MppContent() {
 									MPP Alone
 								</div>
 								<div className="p-4 text-xs font-semibold uppercase tracking-wider text-center text-emerald-600">
-									MPP + StringCost
+									MPP + OpenRind
 								</div>
 							</div>
 
@@ -612,7 +612,7 @@ export function MppContent() {
 				</div>
 			</section>
 
-			{/* How StringCost Works - Architecture */}
+			{/* How OpenRind Works - Architecture */}
 			<section className="relative overflow-hidden bg-gradient-to-br from-[#120A14] via-[#231029] to-[#3D1F4A] text-white">
 				<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(217,193,215,0.15),transparent_50%)]" />
 				<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_80%,rgba(217,185,167,0.1),transparent_40%)]" />
@@ -623,11 +623,11 @@ export function MppContent() {
 							Under the Hood:
 							<br />
 							<span className="bg-gradient-to-r from-white via-brand-accent-100 to-brand-accent-200 bg-clip-text text-transparent">
-								How StringCost Actually Works
+								How OpenRind Actually Works
 							</span>
 						</h2>
 						<p className="text-lg text-white/80 max-w-2xl mx-auto">
-							StringCost is a runtime-aware proxy — not a library that invades your code. It inspects agent traffic at the network level via a secure, signed-URL architecture.
+							OpenRind is a runtime-aware proxy — not a library that invades your code. It inspects agent traffic at the network level via a secure, signed-URL architecture.
 						</p>
 					</div>
 
@@ -671,7 +671,7 @@ export function MppContent() {
 
 					{/* Architecture Diagram */}
 					<div className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-4 sm:p-8 mb-16">
-						<img src="/img/financial-architecture.svg" alt="StringCost Financial Architecture" className="w-full h-auto rounded-lg" />
+						<img src="/img/financial-architecture.svg" alt="OpenRind Financial Architecture" className="w-full h-auto rounded-lg" />
 					</div>
 
 					{/* Double-Entry Ledger Explanation */}
@@ -724,7 +724,7 @@ export function MppContent() {
 							</span>
 						</h2>
 						<p className="text-lg text-brand-text-secondary">
-							MPP returns a 402 challenge. StringCost turns that
+							MPP returns a 402 challenge. OpenRind turns that
 							into a metered session with real-time cost
 							attribution across every provider.
 						</p>
@@ -789,7 +789,7 @@ export function MppContent() {
 
 						<div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
 							<a
-								href="http://app.stringcost.com/"
+								href="http://app.openrind.com/"
 								className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-matter font-semibold transition-all duration-200 bg-white text-[#210F26] hover:bg-brand-accent-100 hover:scale-[1.02] active:scale-[0.98]"
 							>
 								Go Live — No SDK Required

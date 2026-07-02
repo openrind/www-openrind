@@ -28,7 +28,7 @@ const heroCode = `export ANTHROPIC_API_KEY='sk-ant-...'
 npx openeral
 
 # Optional: meter usage
-export STRINGCOST_API_KEY='sk-stringcost-...'
+export OPENRIND_API_KEY='sk-openrind-...'
 
 # Optional: persist files
 export DATABASE_URL='postgresql://user:pass@host:5432/db'
@@ -47,8 +47,8 @@ npx openeral`,
 	{
 		id: "02",
 		title: "Meter calls",
-		desc: "Set one StringCost key and every Anthropic call is tracked by session and workspace.",
-		code: `export STRINGCOST_API_KEY='sk-stringcost-...'
+		desc: "Set one OpenRind key and every Anthropic call is tracked by session and workspace.",
+		code: `export OPENRIND_API_KEY='sk-openrind-...'
 npx openeral`,
 	},
 	{
@@ -87,7 +87,7 @@ const features = [
 	{
 		icon: PlugZap,
 		title: "Metered egress",
-		desc: "Anthropic calls route through StringCost when the API key exists.",
+		desc: "Anthropic calls route through OpenRind when the API key exists.",
 	},
 	{
 		icon: MessageSquareText,
@@ -108,7 +108,7 @@ const features = [
 
 const envVars = [
 	{ key: "ANTHROPIC_API_KEY", purpose: "Claude Code provider key", required: true, example: "sk-ant-..." },
-	{ key: "STRINGCOST_API_KEY", purpose: "Turns on proxy metering", required: false, example: "sk-stringcost-..." },
+	{ key: "OPENRIND_API_KEY", purpose: "Turns on proxy metering", required: false, example: "sk-openrind-..." },
 	{ key: "DATABASE_URL", purpose: "Turns on persistence + pg access", required: false, example: "postgresql://..." },
 	{ key: "OPENERAL_WORKSPACE_ID", purpose: "Names the persistent workspace", required: false, example: "project-alpha" },
 ];
@@ -147,7 +147,7 @@ const faqItems = [
 	},
 	{
 		q: "How does cost tracking work?",
-		a: "When STRINGCOST_API_KEY is set, OpenEral presigns your Anthropic key with StringCost and routes API calls through the proxy.",
+		a: "When OPENRIND_API_KEY is set, OpenEral presigns your Anthropic key with OpenRind and routes API calls through the proxy.",
 	},
 	{
 		q: "What happens if PostgreSQL is down?",
@@ -216,7 +216,7 @@ export function SandboxHero() {
 						<span className="text-white/58">Keep it contained.</span>
 					</h1>
 					<p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/72 sm:text-lg sm:leading-8 text-balance">
-						Isolated home directory, PostgreSQL-backed workspace state, and StringCost metering for agent runs. No Docker. No SDK rewrite.
+						Isolated home directory, PostgreSQL-backed workspace state, and OpenRind metering for agent runs. No Docker. No SDK rewrite.
 					</p>
 					<div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 						<span className="cta-glow">
@@ -249,7 +249,7 @@ export function SandboxHero() {
 				</div>
 
 				<div className="mx-auto mt-8 grid max-w-5xl grid-cols-2 gap-4 text-center sm:grid-cols-4">
-					{[["1 command", "start local"], ["0 SDK changes", "drop-in CLI"], ["Postgres", "persistent home"], ["StringCost", "metered egress"]].map(([val, label]) => (
+					{[["1 command", "start local"], ["0 SDK changes", "drop-in CLI"], ["Postgres", "persistent home"], ["OpenRind", "metered egress"]].map(([val, label]) => (
 						<div key={val} className="rounded-2xl border border-white/12 bg-white/[0.07] px-4 py-4 backdrop-blur-sm">
 							<p className="font-semibold text-white">{val}</p>
 							<p className="mt-1 text-xs text-white/48">{label}</p>
@@ -297,7 +297,7 @@ export function SandboxContent() {
 
 			<div className="bg-gradient-to-r from-brand-accent-100/30 via-brand-accent-200/20 to-brand-accent-100/30">
 				<div className="container-custom grid grid-cols-2 gap-4 py-7 sm:grid-cols-4">
-					{[["local-first", "starts without Postgres"], ["1 env var", "StringCost metering"], ["workspace", "persistent home"], ["pg", "database from bash"]].map(([val, label]) => (
+					{[["local-first", "starts without Postgres"], ["1 env var", "OpenRind metering"], ["workspace", "persistent home"], ["pg", "database from bash"]].map(([val, label]) => (
 						<div key={val}>
 							<p className="text-2xl font-bold text-brand-text-primary">{val}</p>
 							<p className="mt-1 text-xs uppercase tracking-[0.14em] text-brand-text-muted">{label}</p>
@@ -352,7 +352,7 @@ export function SandboxContent() {
 							{icon: Terminal, title: "Claude Code", desc: "agent runtime"},
 							{icon: FolderLock, title: "/home/agent", desc: "isolated workspace"},
 							{icon: Database, title: "PostgreSQL", desc: "optional persistence"},
-							{icon: PlugZap, title: "StringCost", desc: "optional metering"},
+							{icon: PlugZap, title: "OpenRind", desc: "optional metering"},
 						].map((item, index) => {
 							const Icon = item.icon;
 							return (
@@ -378,7 +378,7 @@ export function SandboxContent() {
 							<h2 className="font-display text-[30px] font-bold leading-[1.08] tracking-tight text-brand-text-primary text-balance sm:text-[40px] lg:text-[48px]">
 								Set only what you need.
 							</h2>
-							<p className="text-base leading-7 text-brand-text-secondary text-balance">Start with Anthropic. Add StringCost and Postgres when ready.</p>
+							<p className="text-base leading-7 text-brand-text-secondary text-balance">Start with Anthropic. Add OpenRind and Postgres when ready.</p>
 						</div>
 
 						<div className="overflow-hidden rounded-[28px] border border-brand-border bg-white shadow-md">
@@ -399,7 +399,7 @@ export function SandboxContent() {
 							<div className="border-t border-brand-border bg-brand-base/70 p-4">
 								<HighlightedCode language="bash" title=".env">
 									{`ANTHROPIC_API_KEY='sk-ant-...'
-STRINGCOST_API_KEY='sk-stringcost-...'
+OPENRIND_API_KEY='sk-openrind-...'
 DATABASE_URL='postgresql://user:pass@host:5432/db'
 OPENERAL_WORKSPACE_ID='project-alpha'`}
 								</HighlightedCode>
@@ -585,7 +585,7 @@ pg "\\d public.orders"`}</HighlightedCode>
 									<ArrowRight className="ml-2 h-4 w-4" />
 								</a>
 							</span>
-							<a href="http://app.stringcost.com/" className={secondaryButtonLight}>Open StringCost</a>
+							<a href="http://app.openrind.com/" className={secondaryButtonLight}>Open OpenRind</a>
 						</div>
 					</div>
 				</div>

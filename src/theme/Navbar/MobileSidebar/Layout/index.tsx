@@ -19,7 +19,7 @@ export default function NavbarMobileSidebarLayout({header, primaryMenu, secondar
   <div className='relative group mt-3'>
     <div className='bg-brand-border rounded-md absolute inset-0 translate-y-[2px]'></div>
     <a
-      href="http://app.stringcost.com/"
+      href="http://app.openrind.com/"
       target="_blank"
       rel="noopener noreferrer"
       className="w-full hover:no-underline"

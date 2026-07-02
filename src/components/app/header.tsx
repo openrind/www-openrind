@@ -6,7 +6,7 @@ import { MdMenu } from "react-icons/md";
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const logoSrc = "/img/stringcost-logo.png";
+  const logoSrc = "/img/openrind-logo.png";
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -43,7 +43,7 @@ export const Header = () => {
           <a href="/" className="block hover:opacity-80 transition-opacity">
             <img
               src={logoSrc}
-              alt="StringCost logo"
+              alt="OpenRind logo"
               width={120}
               height={41}
               className="w-[120px] h-[41px] object-contain"
@@ -66,7 +66,7 @@ export const Header = () => {
 
         {/* Desktop CTA Button */}
         <div className="hidden md:inline-block">
-          <a href="https://www.google.com/search?q=https://stringcost.com/demo" className="rounded-full bg-[#210F26] px-5 py-2 text-sm font-matter font-medium text-white transition hover:bg-[#0D0D0D] hover:no-underline">
+          <a href="https://calendar.app.google/hjN2HkZBLJMtSuku7" className="rounded-full bg-[#210F26] px-5 py-2 text-sm font-matter font-medium text-white transition hover:bg-[#0D0D0D] hover:no-underline">
             Schedule Demo
           </a>
         </div>
@@ -119,7 +119,7 @@ export const Header = () => {
 
             {/* Mobile CTA Button */}
             <div className="mt-4">
-              <a href="https://www.google.com/search?q=https://stringcost.com/demo" className="w-full block text-center rounded-full bg-[#210F26] py-4 text-base font-matter font-medium text-white hover:bg-[#0D0D0D] hover:no-underline">
+              <a href="https://calendar.app.google/hjN2HkZBLJMtSuku7" className="w-full block text-center rounded-full bg-[#210F26] py-4 text-base font-matter font-medium text-white hover:bg-[#0D0D0D] hover:no-underline">
                 Schedule Demo
               </a>
             </div>

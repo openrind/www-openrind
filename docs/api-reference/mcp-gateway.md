@@ -6,7 +6,7 @@ description: MCP Gateway endpoints and proxy parameters
 
 # MCP Gateway Endpoints
 
-**Base URL:** `https://scost-gateway.arakoo.com`
+**Base URL:** `https://openrind-gateway.arakoo.com`
 
 ## Endpoints
 

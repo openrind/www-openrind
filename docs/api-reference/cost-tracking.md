@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
 title: Cost Tracking
-description: How StringCost tracks and reports costs
+description: How OpenRind tracks and reports costs
 ---
 
 # Cost Tracking
 
-All requests through StringCost are tracked with:
+All requests through OpenRind are tracked with:
 
 - **Provider costs** (COGS) - What you pay the LLM provider
 - **Billed revenue** - What you charge your users (with markup)
@@ -16,4 +16,4 @@ All requests through StringCost are tracked with:
 
 ## Usage Dashboard
 
-Access your usage dashboard at: `https://scost.arakoo.com/html/events`
+Access your usage dashboard at: `https://openrind.arakoo.com/html/events`

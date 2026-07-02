@@ -78,7 +78,7 @@ Or in `~/.claude/settings.json`:
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://scost-gateway.arakoo.com/stringcost-proxy/a/TOKEN_HERE"
+    "ANTHROPIC_BASE_URL": "https://openrind-gateway.arakoo.com/openrind-proxy/a/TOKEN_HERE"
   }
 }
 ```

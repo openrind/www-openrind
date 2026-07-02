@@ -67,7 +67,7 @@ const claudeRolloutSteps = [
 		kicker: "02",
 		title: "Route",
 		description:
-			"Model calls, tool calls, and CLI sessions exit through a customer-prem StringCost proxy before they become vendor spend.",
+			"Model calls, tool calls, and CLI sessions exit through a customer-prem OpenRind proxy before they become vendor spend.",
 		icon: Zap,
 	},
 	{
@@ -211,7 +211,7 @@ export function SpendHero() {
 							</h1>
 							<div className="max-w-[560px] space-y-4 text-base sm:text-[1.0625rem] lg:text-lg leading-[1.7] text-white/70 text-pretty">
 								<p>
-									StringCost gives enterprises an OpenShell-based runtime for coding agents and a proxy
+									OpenRind gives enterprises an OpenShell-based runtime for coding agents and a proxy
 									deployed in the customer environment.
 								</p>
 								<p>
@@ -237,7 +237,7 @@ export function SpendHero() {
 
 						<div className="flex flex-col gap-3 pt-3 sm:flex-row sm:items-center sm:gap-4">
 							<span className="cta-glow">
-								<a href="http://app.stringcost.com/" className={`${heroPrimaryButton} w-full sm:w-auto`}>
+								<a href="http://app.openrind.com/" className={`${heroPrimaryButton} w-full sm:w-auto`}>
 									Track your AI spend
 									<ArrowRight className="ml-2 h-4 w-4" />
 								</a>
@@ -272,7 +272,7 @@ export function SpendReportPreview() {
 				<div className="mx-auto max-w-6xl overflow-hidden rounded-[28px] border border-brand-border bg-white shadow-2xl">
 					<img
 						src="/img/report-hero.webp"
-						alt="StringCost financial reports dashboard showing vendor token spend, COGS, revenue, and gross margin"
+						alt="OpenRind financial reports dashboard showing vendor token spend, COGS, revenue, and gross margin"
 						width={1354}
 						height={909}
 						loading="lazy"
@@ -474,7 +474,7 @@ export function SpendContent() {
 					<div>
 						<p className="text-3xl sm:text-4xl font-bold text-brand-text-primary">15 min</p>
 						<p className="text-xs text-brand-text-muted uppercase tracking-wider mt-1">
-							StringCost detection time
+							OpenRind detection time
 						</p>
 					</div>
 				</div>
@@ -498,7 +498,7 @@ export function SpendContent() {
 						</h2>
 						<p className="text-lg text-white/80 max-w-2xl mx-auto text-pretty">
 							Modern agents package work as shell commands, generated code, and tool calls. Run them inside an
-							OpenShell-based runtime, route egress through a StringCost proxy in your environment, and the
+							OpenShell-based runtime, route egress through a OpenRind proxy in your environment, and the
 							managed control plane gets the budget, attribution, and audit trail.
 						</p>
 					</div>
@@ -603,7 +603,7 @@ export function SpendContent() {
 							Native vendor tracking is not enough.
 						</h2>
 						<p className="text-lg leading-8 text-brand-text-secondary text-pretty">
-							Each AI tool provides a different level of visibility and control. StringCost fills the gaps across
+							Each AI tool provides a different level of visibility and control. OpenRind fills the gaps across
 							all of them.
 						</p>
 					</div>
@@ -652,7 +652,7 @@ export function SpendContent() {
 					<div className="mt-8">
 						<div className="rounded-2xl bg-brand-accent-300/10 p-6 border-l-4 border-brand-accent-300">
 							<p className="text-base font-medium text-brand-text-primary">
-								StringCost unifies all three into a single pane of glass with real-time attribution, anomaly
+								OpenRind unifies all three into a single pane of glass with real-time attribution, anomaly
 								detection, and automated chargebacks.
 							</p>
 						</div>
@@ -674,12 +674,12 @@ export function SpendContent() {
 							Start managing it like live infrastructure.
 						</h2>
 						<p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/78 text-pretty">
-							StringCost gives you the control layer between developer-tool velocity and financial exposure:
+							OpenRind gives you the control layer between developer-tool velocity and financial exposure:
 							user-level tracking, project-level attribution, anomaly detection, and budget enforcement in one
 							system.
 						</p>
 						<div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-							<a href="http://app.stringcost.com/" className={primaryButton}>
+							<a href="http://app.openrind.com/" className={primaryButton}>
 								Track your AI spend
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</a>
