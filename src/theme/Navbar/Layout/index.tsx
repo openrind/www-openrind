@@ -24,6 +24,12 @@ export default function NavbarLayout({children}: Props): ReactNode {
 	// Check if current page is home page
 	const isHomePage = location.pathname === "/" || location.pathname === "";
 
+	// Routes whose hero has a dark background: the transparent navbar sits on a
+	// dark surface there, so the dark logo must be inverted to white to stay visible.
+	const darkHeroRoutes = new Set(["/", "/spend", "/x402", "/mpp", "/sandbox"]);
+	const normalizedPath = location.pathname.replace(/\/+$/, "") || "/";
+	const isDarkHeroPage = darkHeroRoutes.has(normalizedPath);
+
 	// Add state for scroll detection
 	const [isScrolled, setIsScrolled] = useState(false);
 
@@ -64,7 +70,9 @@ export default function NavbarLayout({children}: Props): ReactNode {
 					"navbar-sidebar--show": mobileSidebar.shown,
 				},
 				// Apply background color and shadow based on scroll state
-				isScrolled ? styles.navbarScrolled : styles.navbarTransparent
+				isScrolled ? styles.navbarScrolled : styles.navbarTransparent,
+				// Invert the logo to white while the transparent navbar sits on a dark hero
+				!isScrolled && isDarkHeroPage && styles.navbarOverDarkHero
 				// Apply max-width style for home page
 			)}
 		>

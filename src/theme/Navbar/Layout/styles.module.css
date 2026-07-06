@@ -29,3 +29,18 @@
 :global(.navbar) {
 	--ifm-navbar-background-color: transparent;
 }
+
+/* Logo adapts to the navbar background: dark logo on the light (scrolled)
+   navbar, inverted to white while the transparent navbar sits on a dark hero. */
+.navbarCustom :global(.navbar__logo) {
+	transition: filter 0.3s ease;
+}
+
+.navbarOverDarkHero :global(.navbar__logo) {
+	filter: brightness(0) invert(1);
+}
+
+/* Keep the mobile-sidebar logo dark — that panel has a light background. */
+.navbarOverDarkHero :global(.navbar-sidebar) :global(.navbar__logo) {
+	filter: none;
+}
